@@ -1,8 +1,8 @@
 <template>
 <div>
  <b-card
-    title="Mountain Bike"
-    img-src="https://picsum.photos/600/300/?image=25"
+    :title="title"
+    :img-src="'./images/'+image"
     img-alt="Image"
     img-top
     tag="article"
@@ -10,7 +10,7 @@
     class="mb-2"
   >
     <b-card-text>
-     Irure laborum voluptate dolor officia dolore ut et consectetur. In velit proident consequat anim duis ut nisi ut aliquip tempor proident. Ullamco sint pariatur et commodo irure fugiat irure tempor. Qui reprehenderit sint duis consequat exercitation consequat mollit est culpa.
+     {{content}}
     </b-card-text>
 
     <b-button href="#" variant="primary">Go somewhere</b-button>
@@ -21,7 +21,23 @@
 <script>
 
     export default {
-    
+    props: {
+        title: {
+            type: String,
+            default: ""
+        },
+        content:{
+            type:String,
+            default:""
+        },
+        image:{
+            type:String,
+            default:""
+        }
+    },
+    mounted () {
+        console.log({title :this.title, content : this.content, image: this.image});
+    },
     }
 </script>
 
