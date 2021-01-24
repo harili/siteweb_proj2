@@ -9,13 +9,15 @@ import './custom.scss';
 
 import Home from '@/components/pages/Home';
 import About from '@/components/pages/About';
+import Quran from '@/components/posts/Quran';
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 
 const routes=[
   {path:"/", component:Home},
-  {path:"/about", component:About}
+  {path:"/about", component:About},
+  {path:"/quran", component:Quran}
 ]
 
 const router = new VueRouter({

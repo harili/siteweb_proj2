@@ -13,7 +13,7 @@
      {{content}}
     </b-card-text>
 
-    <b-button href="#" variant="primary">Go somewhere</b-button>
+    <b-button :href="link" variant="primary">Go somewhere</b-button>
   </b-card>
 </div>
 </template>
@@ -31,6 +31,10 @@
             default:""
         },
         image:{
+            type:String,
+            default:""
+        },
+        link:{
             type:String,
             default:""
         }

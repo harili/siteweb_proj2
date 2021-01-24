@@ -4,12 +4,11 @@
     <b-navbar-toggle target="nav-text-collapse"></b-navbar-toggle>
 
     <b-navbar-brand>BootstrapVue</b-navbar-brand>
-
-    <b-collapse id="nav-text-collapse" is-nav>
       <b-navbar-nav>
-        <b-nav-text>Navbar text</b-nav-text>
+        <b-nav-item href="/">Home</b-nav-item>
+        <b-nav-item href="/about">A propos</b-nav-item>
       </b-navbar-nav>
-    </b-collapse>
+
   </b-navbar>
     <router-view></router-view>
     

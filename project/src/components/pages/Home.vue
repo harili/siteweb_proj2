@@ -4,7 +4,7 @@
       <h1>Bienvenue sur mon site</h1>
       <div class="row">
         <div class="col-sm-4">
-          <Card content = "Le Coran" title = "La vérité" image="coran.jpg"/>
+          <Card content = "Le Coran" title = "La vérité" image="coran.jpg" link="/quran"/>
         </div>
         <div class="col-sm-4">
           <Card/>
